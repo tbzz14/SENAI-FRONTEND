@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    header {
+        background-color: #0056b3; /* Cor de fundo azul para o cabeçalho */
+        color: white; /* Cor do texto branca */
+        padding: 20px 0; /* Espaçamento interno no topo e embaixo */
+        text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    }
+    
+    /* Estilo para a logo dentro do cabeçalho */
+    header .logo img {
+        width: 150px; /* Largura fixa para a imagem da logo */
+        height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    }
+    
+    /* Estilos para a lista de navegação */
+    nav ul {
+        list-style-type: none; /* Remove os marcadores padrão da lista */
+    }
+    
+    /* Estilos para cada item da lista de navegação */
+    nav ul li {
+        display: inline; /* Exibe os itens em linha, ao invés de em blocos verticais */
+        margin: 0 15px; /* Espaçamento lateral entre os itens */
+    }
+    
+    /* Estilos para os links de navegação */
+    nav ul li a {
+        color: white; /* Cor do texto dos links */
+        text-decoration: none; /* Remove sublinhado dos links */
+        font-weight: bold; /* Define o texto como negrito */
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header><br>
+    <h1>Entre em contato com a gente</h1><br>
+    
+    <table style="background-color: #0099ff; border: 1px solid black; padding: 10px; width: 50%; margin: 0 auto;">
+        <tbody><tr>
+            <td>
+                <form>
+                    <!--Formuladrio de contato-->
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required=""><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required=""><br><br>
+
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40" required=""></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+             
+                </form>
+            </td>
+        </tr>
+    </tbody></table>
+</body>
+</html>
