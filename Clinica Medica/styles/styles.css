@@ -1,0 +1,90 @@
+/* Estilos globais do site*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte padrão para o site*/
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #f4f4f4; /*Cor de fundo suave*/
+    color: #333; /* Cor do texto padrão */
+
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    background-color: #007b5e; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    display: flex; /* Usa flexbox para alinhar logo e navegação */
+    justify-content: space-between; /* Distribui os itens do espaço disponivel */
+    padding: 15px; /* Espaçamento interno do cabeçalho */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito*/
+
+}
+
+header.logo img{
+    height: 50px; /* Define a altura da logo */
+
+}
+
+header nav ul {
+    list-style-type: none; /* Remove os marcadores da lista de navegação */
+    display: flex; /* Alinha os itens da navegação horinzontalmente */
+    gap: 20px; /* Espaçamento entre os itens da navegação */
+
+}
+
+header nav ul li a{
+    color: white; /* Dfine a cor dos links da navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa os links em negrito */
+
+}
+
+/* Estilos do banner */
+
+.banner{
+    display: flex; /* Alinha o texto e a imagem do banner lado a lado */
+    align-items: center; /*Centraliza verticalmente os elementos do banner */
+    padding: 20px; /* Espaçamento interno do banner */
+    background-color: #e2f0d9; /* Cor de fundo suave para o banner */
+
+}
+
+.banner-text {
+    flex: 1; /* O texto ocupa o espaço restante */
+
+}
+
+.banner img {
+    width: 300px; /* Define a largura da imagem do banner */
+    border-radius: 10px; /* Borda arredondada na imagem */
+    margin-left: 20px; /* Espaço entre o texto e a imagem */
+
+}
+
+/* Seção de introdução */
+
+main .intro{
+    display: flex; /* Alinha a imagem e o texto */
+    align-items: center; /* Centraliza verticalmente os elementos da introdução */
+    padding: 20px; /* Espaçamento interno da seção */
+    background-color: #fff; /* Cor de fundo branca */
+
+}
+
+main .intro img{
+    width: 50%; /* A imagem ocupa metade da largura disponivel */
+    border-radius: 10px; /* Borda arrendondada na imagem */
+    margin-right: 20px; /*Espaçamento entre a imagem e o texto */
+    
+}
+
+main .intro .text h2{
+    color: #007b5e; /* Cor de destaque para o titulo */
+
+}
+
+main .intro .text p {
+    font-size: 1.1em; /* Aumenta o
+    
+}
