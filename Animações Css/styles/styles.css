@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    color: #333;
+}
+
+header{
+    background-image: url('../img/fundo\ cabeçalho.jpeg');
+    padding: 50px;
+    background-size: cover;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.text-effects h2{
+    margin: 20px;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+
+}
+
+/* Efeito de preenchimento com cor ao passar o mouse */
+
+.effect-fill:hover {
+    background-image: linear-gradient(to right, #f2709c, #ff9472, #333);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+
+    /* Verifica a compatibilidade do navegador com o efeito */
+}
+
+/* Efeito ampliar o texto ao clica */
+
+.effect-scale:active {
+    transform: scale(1.2);
+    /* Aumentara o tamanho aprox 20% */
+}
+
+.effect-fade-in {
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+/* Efeito de rotação do texto ao passar o mouse */
+
+.effect-rotate:hover {
+    transform: rotate(5deg);
+}
+
+/* Efeito de sombreamento */
+
+.effect-shadow:hover{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito borda ao passar o mouse */
+
+.effect-border-grow:hover {
+    border:2px solid;
+    padding: 5;
+}
