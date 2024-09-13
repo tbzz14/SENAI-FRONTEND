@@ -1,0 +1,155 @@
+/* Zerar o espaçamento e define a fonte padrão */
+
+* {
+    margin: 0; /* Margem */
+    padding: 0; /*Espaçamento entre o item e a borda */
+    box-sizing: border-box; /* Tamanho da caixa */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+  }
+
+/* Define o fundo da página */
+
+  body{
+    background-color: #f4f4f4;
+    }
+
+/* Estilo do  Cabeçalho */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 15px 50px;
+    }
+
+/* Estilo do título do cabeçalho */
+
+    header h1{
+        font-size: 24px;
+    }
+
+/* Estilo do menu de seleção */
+
+    header-menu select{
+        padding: 10px;
+        border: none;
+        background-color: #555;
+        color: #fff;
+        cursor: pointer;
+    }
+
+/* Estilo do banner principal */
+
+    .banner {
+        height: 400px;
+        background: url('https://estrelalocadoramg.com.br/wp-content/uploads/2019/03/frota-2.png') no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+/* Estilo do catálogo */
+
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanhos iguais */
+        gap: 20px; /* Espaçamento entre as grids */
+        padding: 40px 50px;
+    }
+
+/* Estilos dos cards */
+ 
+    .catalog-card{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+         
+    }
+
+/* Efeito de zoom */
+
+    .catalog-card:hover {
+        transform: scale(1.05);
+
+    }
+
+/* Estilo da imagem do card */
+
+    .catalog-card img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+/* Título do catálogo */
+
+    .catalog-card h3{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+/* Descrição do carro */
+
+    .catalog-card p{
+        color: #555;
+        margin-bottom: 15px; /* Inseri uma margem acima, separando melhor h3 e p */
+
+    }
+
+/* Estilo do botão */
+
+.catalog-card button {
+    padding: 10px 20px;
+    background-color: #ffc400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+    .catalog-card button:hover{
+        background-color:#ff9100;    
+    }
+
+/* Titulo da seção de contato */
+
+    .contact-form h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+/* Estilo da seção */
+
+    .contact-form{
+        background-color: #f9f9f9;
+        padding: 40px 50px;
+        margin-top: 40px;
+    }
+
+/* Estilo dos labels */
+
+    .contact-form label{
+        display: block;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+/* Estilo dos campos de entrada /input */
+
+    .contact-form input
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
