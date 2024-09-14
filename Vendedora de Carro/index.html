@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendedora de carros</title>
     <link rel="stylesheet" href="styles.css"> <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -12,23 +13,24 @@
     
     <header>
         <h1>Tbzz Car</h1>
+        <img src="https://www.zarla.com/images/zarla-automobil-1x1-2400x2400-20210611-dbmx4c739pphcjw7r3w9.png?crop=1:1,smart&width=250&dpr=2" alt="">
         <div class="header-menu">
             <select>
-                <option>Catálogo</option>
+                <option value="" disabled selected>Selecione o Catálogo</option>
                 <option>Carros Usados</option>
                 <option>Carros Novos</option>
                 <option>Promoções</option>
             </select>
 
             <select>
-                <option>Marcas</option>
+                <option value=""disabled selected>Selecione a Marca</option>
                 <option>Ford</option>
                 <option>Chevrolet</option>
                 <option>Honda</option>
             </select>
 
             <select>
-                <option>Contato</option>
+                <option value="" disabled selected>Selecione o Contato</option>
                 <option>Fale Conosco</option>
                 <option>Localização</option>
             </select>
@@ -36,7 +38,12 @@
     </header>
 
     <div class="banner">
-        Encontre o carro dos seus sonhos!
+        <div class="slides">
+        <img src="https://www.designi.com.br/images/preview/10042172.jpg" alt="Banner 1">
+        <img src="https://www.designi.com.br/images/preview/10044669.jpg" alt="Banner 2">
+        <img src="https://wmveiculossjc.com.br/_next/image?url=https%3A%2F%2Fbndvsitesst.blob.core.windows.net%2Fsites-banners%2Fclientes%2F1084%2F133416701051665734.jpeg&w=3840&q=75" alt="Banner 3">
+        <img src="https://resized-images.autoconf.com.br/720x400/filters:format(webp)/site/972/868c0bbc-15d1-4980-bda8-7f37251e6992.png" alt="Banner 4">
+        </div>
     </div>
 
     <!--Catálogo de carros-->
@@ -73,20 +80,25 @@
 
     <!--Formulário de contato-->
 
-    <section class="contact-form">
+    <section class="form-container"> 
+        <div class="contact-form">
         <h2>Entre em contato</h2>
         <form action="#">
-            <label for="name">Nome: </label>
+            <label for="name"><i class="fas fa-bug"></i> Nome: </label>
             <input type="text" id="name" placeholder="Digite o seu nome" >
 
-            <label for="email">Email: </label>
+            <label for="email"><i class="fa fa-rocket"></i> Email: </label>
             <input type="email" id="email" placeholder="Digite um e-mail válido" >
 
-            <label for="message">Mensagem: </label>
+            <label for="message"> <i class="fas fa-book"></i> Mensagem: </label>
             <textarea id="message" rows="5" placeholder="Como podemos te ajudar?"></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit"> <i class="fas fa-download"></i> Enviar</button>
         </form>
+        </div>
+        <div class="form-image">
+            <img src="https://play-lh.googleusercontent.com/lhgu1aVs_qHBUzN2w21-rZKKC613lNOLP7bPD-CLRi-ZLxC7KtGDcWSFcSRsrBuk_fU" alt="">
+        </div>
     </section>
 
     <!--Footer-->
